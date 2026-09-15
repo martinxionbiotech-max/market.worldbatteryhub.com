@@ -8,7 +8,7 @@ const SITE = 'https://market.worldbatteryhub.com';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Regional Battery Demand | World Battery Hub</title>
-    <meta name="description" content="How battery demand is distributed regionally — Asia leads in production and EV demand, Europe and North America follow on EV adoption, and lead-acid demand is more evenly spread." />
+    <meta name="description" content="How battery demand is distributed regionally — China, Europe and North America EV shares, the production-vs-import split, and why Asia is both the factory and the market." />
     <link rel="canonical" href={`${SITE}/regional-demand/`} />
     <style>
       body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
@@ -25,7 +25,7 @@ const SITE = 'https://market.worldbatteryhub.com';
   <body>
     <div class="container">
       <h1>Regional Battery Demand</h1>
-      <p class="muted">Battery Market Intelligence · Last reviewed 2026-09-15</p>
+      <p class="muted">Battery Market Intelligence · Data period 2024 (IEA) · Last reviewed 2026-09-15</p>
 
       <div class="box">
         <strong>Direct answer:</strong> Battery demand is heavily concentrated in <strong>Asia</strong> — the region both
@@ -35,19 +35,29 @@ const SITE = 'https://market.worldbatteryhub.com';
         automotive-and-industrial commodity.
       </div>
 
-      <h2>Regional structure</h2>
+      <h2>EV adoption as a demand proxy</h2>
+      <p>
+        Electric-vehicle market share is the clearest read on lithium demand by region. For 2024 the IEA puts the EV
+        share of new-car sales at roughly <strong>45% in China, 25% in Europe and over 11% in the United States</strong>.
+        This ordering — China far ahead, Europe second, North America third — mirrors the battery demand map.
+      </p>
       <table>
-        <thead><tr><th>Region</th><th>Role</th><th>Main driver</th></tr></thead>
+        <thead><tr><th>Region</th><th>EV share of new-car sales (2024, approx.)</th></tr></thead>
         <tbody>
-          <tr><td><strong>Asia (China, Korea, Japan)</strong></td><td>Production hub + largest demand</td><td>EV, storage, electronics</td></tr>
-          <tr><td><strong>Europe</strong></td><td>Large consumer + growing production</td><td>EV adoption, grid storage</td></tr>
-          <tr><td><strong>North America</strong></td><td>Large consumer + new production</td><td>EV, storage, industrial</td></tr>
-          <tr><td><strong>Rest of world</strong></td><td>Smaller, import-dependent</td><td>Lead-acid replacement, early EV</td></tr>
+          <tr><td>China</td><td>~45%</td></tr>
+          <tr><td>Europe</td><td>~25%</td></tr>
+          <tr><td>United States</td><td>~11%</td></tr>
         </tbody>
       </table>
-      <p class="muted">
-        Percentages vary by source and year; this page states the structure (Asia-led) rather than a single
-        point estimate, consistent with the <a href="/methodology/">methodology</a>.
+      <p class="muted">Source: IEA Global EV Outlook 2024. Shares are approximate and vary by month and definition.</p>
+
+      <h2>Production vs import: the split that matters</h2>
+      <p>
+        The three big regions differ sharply in how they meet demand. China meets its battery demand largely with
+        <strong>domestic production</strong>. Europe and the United States, by contrast, still depend on
+        <strong>imports</strong> for a large share of their battery supply, even as both build local capacity. This
+        split explains the policy push (tariffs, local-content rules) in Europe and North America — they are
+        importers trying to build domestic supply, while China is the exporter.
       </p>
 
       <h2>Lead-acid vs lithium: two different geographies</h2>
@@ -59,28 +69,22 @@ const SITE = 'https://market.worldbatteryhub.com';
         exporter is often pulled toward a few EV-manufacturing regions.
       </p>
 
-      <h2>The trend to watch</h2>
-      <p>
-        The structural shift is lithium gaining share from lead-acid in transport and storage, driven by EV
-        penetration and falling lithium cost. Lead-acid does not disappear — it remains the default for automotive
-        SLI, industrial standby and cost-sensitive applications — but the growth is in lithium. See the
-        <a href="/battery-market-overview/">market overview</a> for the segment structure.
-      </p>
-
       <h2>The Author's Take</h2>
       <div class="box">
         <p><strong>Position:</strong> The most useful regional fact is that Asia is both the factory and the market —
-        so any regional demand analysis that separates "supply in Asia" from "demand in the West" is missing that
-        the largest demand is in the same place as the largest supply.</p>
+        and the production-vs-import split is what actually drives policy in Europe and North America, more than any
+        demand percentage.</p>
         <p><strong>Reasoning:</strong> China does not just make batteries for export; it is the world's largest consumer
         too. That concentration shapes price, supply chain and policy in a way that a simple import/export view
-        obscures.</p>
+        obscures — and the EV-share gap (45% vs 25% vs 11%) tells you where the growth is.</p>
         <p class="muted"><em>This is the author's editorial view, not investment or purchasing advice.</em></p>
       </div>
 
       <h2>Sources</h2>
       <ul>
-        <li>SNE Research / EVTank — regional EV battery installations (2024–2025).</li>
+        <li>IEA Global EV Outlook 2024 / 2025 — EV shares and regional battery demand.</li>
+        <li>SNE Research / EVTank — regional EV battery installations.</li>
+        <li>Statista — EV battery demand by region (GWh).</li>
         <li>Industry and trade references — lead-acid regional demand.</li>
       </ul>
 
