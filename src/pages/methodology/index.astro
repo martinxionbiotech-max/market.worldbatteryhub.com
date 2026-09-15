@@ -8,7 +8,7 @@ const SITE = 'https://market.worldbatteryhub.com';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Market Data Methodology | World Battery Hub</title>
-    <meta name="description" content="How World Battery Hub sources and handles battery market data — source hierarchy, explicit sourcing and dating, and how conflicting figures are flagged." />
+    <meta name="description" content="How World Battery Hub sources and handles battery market data — source hierarchy, why figures conflict, explicit sourcing and dating, and how conflicting figures are flagged." />
     <link rel="canonical" href={`${SITE}/methodology/`} />
     <style>
       body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
@@ -43,21 +43,40 @@ const SITE = 'https://market.worldbatteryhub.com';
         </tbody>
       </table>
 
+      <h2>Why figures conflict — and what we do about it</h2>
+      <p>
+        Two credible sources can report very different numbers for the same market, and the difference is almost
+        always a matter of <strong>scope, definition or date</strong>:
+      </p>
+      <ul>
+        <li><strong>Scope</strong> — cells vs packs, new vs recycled, one application vs all applications, value vs volume.</li>
+        <li><strong>Definition</strong> — "battery market" can mean manufacturing output, installed capacity, or end-market value.</li>
+        <li><strong>Date</strong> — a calendar year vs a rolling period; a forecast vs an actual.</li>
+      </ul>
+      <p>
+        A concrete example: the "China battery market" is quoted at roughly <strong>USD 7 billion</strong> in one scope
+        and roughly <strong>USD 50 billion</strong> in another. Both are defensible — they measure different things. The
+        disciplined move is to show both with their scope, not to pick one, which is what this site does (see the
+        <a href="/china-battery-market/">China battery market</a> report).
+      </p>
+
       <h2>The rules</h2>
       <ul>
         <li><strong>Source and date on every figure</strong> — a number without both is not published.</li>
         <li><strong>Conflict is flagged</strong> — when two sources disagree, the disagreement is stated and its likely reason noted, not hidden behind an average.</li>
         <li><strong>No fabricated market size, price or growth rate</strong> — if a figure cannot be sourced, it is omitted.</li>
         <li><strong>Unit and currency are stated</strong> — no silent conversion or false precision.</li>
+        <li><strong>Data period and geography are stated</strong> — a "2025" figure says whether it is full-year, YTD, or a forecast.</li>
       </ul>
 
       <h2>The Author's Take</h2>
       <div class="box">
         <p><strong>Position:</strong> Market data is only as trustworthy as its sourcing — a chart with no source is
-        decoration, and a sourced number with a conflict you can see is the honest version.</p>
-        <p><strong>Reasoning:</strong> Battery-market figures vary wildly between sources because of different
-        definitions and dates. The disciplined move is to show the source and the conflict, not to produce a fake-clean
-        single number.</p>
+        decoration, and a sourced number with a visible conflict is the honest version. The useful skill is reading
+        the scope, not the headline number.</p>
+        <p><strong>Reasoning:</strong> Battery-market figures vary wildly between sources because of different definitions and
+        dates. The disciplined move is to show the source and the conflict, not to produce a fake-clean single number
+        — and the reader who asks "what scope and what date" is the one who actually understands the figure.</p>
         <p class="muted"><em>This is the author's editorial view, not investment advice.</em></p>
       </div>
 
