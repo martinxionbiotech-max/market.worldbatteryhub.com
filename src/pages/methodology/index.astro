@@ -1,0 +1,67 @@
+---
+const SITE = 'https://market.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Market Data Methodology | World Battery Hub</title>
+    <meta name="description" content="How World Battery Hub sources and handles battery market data — source hierarchy, explicit sourcing and dating, and how conflicting figures are flagged." />
+    <link rel="canonical" href={`${SITE}/methodology/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Market Data Methodology</h1>
+      <p class="muted">Battery Market Intelligence · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Every figure published here carries a <strong>source</strong> and a
+        <strong>date</strong>. Numbers are collected from primary sources first, cross-checked, and flagged rather than
+        silently averaged when sources conflict. No figure is fabricated or extrapolated without saying so.
+      </div>
+
+      <h2>Source hierarchy</h2>
+      <table>
+        <thead><tr><th>Tier</th><th>Source type</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td>1 — Primary</td><td>Government &amp; official statistics</td><td>Customs/export data, national statistics bureaus, trade bodies</td></tr>
+          <tr><td>2 — Industry</td><td>Established industry publications</td><td>Trade associations, reputable market research</td></tr>
+          <tr><td>3 — Secondary</td><td>News &amp; aggregators</td><td>Used for leads, not final numbers</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The rules</h2>
+      <ul>
+        <li><strong>Source and date on every figure</strong> — a number without both is not published.</li>
+        <li><strong>Conflict is flagged</strong> — when two sources disagree, the disagreement is stated and its likely reason noted, not hidden behind an average.</li>
+        <li><strong>No fabricated market size, price or growth rate</strong> — if a figure cannot be sourced, it is omitted.</li>
+        <li><strong>Unit and currency are stated</strong> — no silent conversion or false precision.</li>
+      </ul>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> Market data is only as trustworthy as its sourcing — a chart with no source is
+        decoration, and a sourced number with a conflict you can see is the honest version.</p>
+        <p><strong>Reasoning:</strong> Battery-market figures vary wildly between sources because of different
+        definitions and dates. The disciplined move is to show the source and the conflict, not to produce a fake-clean
+        single number.</p>
+        <p class="muted"><em>This is the author's editorial view, not investment advice.</em></p>
+      </div>
+
+      <p class="muted">Return to <a href="https://market.worldbatteryhub.com">Battery Market Intelligence</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Market data is informational, not investment or purchasing advice.</p>
+    </div>
+  </body>
+</html>
