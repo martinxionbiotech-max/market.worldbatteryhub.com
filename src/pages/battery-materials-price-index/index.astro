@@ -1,0 +1,113 @@
+---
+const SITE = 'https://market.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battery Materials Price Index (Jan 2022 = 100) | World Battery Hub</title>
+    <meta name="description" content="A battery materials price index with January 2022 as the base — lithium carbonate halved to ~50, nickel ~77, cobalt ~79, lead ~84. The divergence story behind battery costs." />
+    <link rel="canonical" href={`${SITE}/battery-materials-price-index/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+      ul { padding-left: 22px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Battery Materials Price Index (Jan 2022 = 100)</h1>
+      <p class="muted">Battery Market Intelligence · Data asset · Last reviewed 2026-09-17</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Against a January 2022 base of 100, the four battery-critical materials
+        now read: <strong>lithium carbonate ~50</strong>, <strong>cobalt ~79</strong>, <strong>nickel ~77</strong>,
+        <strong>lead ~84</strong>. Every material sits below its 2022 level — but lithium fell the furthest, and
+        the divergence is the story: the input that once spiked hardest is now the cheapest relative to its base.
+      </div>
+
+      <h2>The index table</h2>
+      <table>
+        <thead><tr><th>Material</th><th>Base (Jan 2022)</th><th>Current (Sep 2026)</th><th>Index</th></tr></thead>
+        <tbody>
+          <tr><td>Lithium carbonate (battery grade, China)</td><td>~280,000 yuan/t</td><td>~128,000–156,000 yuan/t</td><td><strong>~50</strong></td></tr>
+          <tr><td>Nickel (LME)</td><td>~$21,000/t</td><td>~$16,250/t</td><td><strong>~77</strong></td></tr>
+          <tr><td>Cobalt (LME / Fastmarkets)</td><td>~$65,000/t</td><td>~$51,600/t</td><td><strong>~79</strong></td></tr>
+          <tr><td>Lead (LME)</td><td>~$2,250/t</td><td>~$1,883/t</td><td><strong>~84</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        Base values rounded from January 2022 market data; current values from September 2026 exchange and
+        market reporting. The index is this site's own construction — a relative price series, not a tradeable
+        instrument.
+      </p>
+
+      <h2>How the index is built</h2>
+      <p>
+        Each material is indexed to its own January 2022 price: <strong>index = current ÷ base × 100</strong>.
+        The base date is deliberate — January 2022 is the last month before the lithium carbonate market began
+        its run to the November 2022 peak of ~597,000 yuan/ton, so the index reads the entire boom-and-bust
+        cycle from a common starting line. Each material uses its own unit (yuan or dollars), which is why the
+        comparison is <em>relative</em> — the index shows how far each moved from its own base, not absolute
+        levels.
+      </p>
+
+      <h2>The divergence story</h2>
+      <p>
+        The four materials diverged by design: <strong>lithium halved</strong> because the 2022 spike was a
+        supply-demand squeeze that new mining and processing capacity then broke (see
+        <a href="/china-battery-prices/">the carbonate timeline</a>); <strong>nickel and cobalt fell ~20%</strong>
+        as EV chemistry shifted toward LFP, cutting demand for both; and <strong>lead moved least</strong>
+        because its market is the mature, recycling-backed lead-acid industry rather than a new-economy boom
+        (see <a href="/lead-acid-battery-market/">lead-acid market</a>). The index makes the pattern visible in
+        one table: the newer the chemistry's input, the wilder its cycle.
+      </p>
+
+      <h2>What the index means for battery costs</h2>
+      <p>
+        The materials are the cost floor, and the index shows the floor is low: the single largest swing factor
+        of the 2022–2025 period — lithium — now sits at half its base. The consequence is the price discipline
+        already visible in <a href="/battery-price-trends/">the pack-price curve</a>: cells near $108/kWh are
+        not just scale economics, they are materials economics, and the index is the materials layer made
+        legible.
+      </p>
+
+      <h2>Our Interpretation</h2>
+      <div class="box">
+        <p><strong>My position:</strong> The index's lesson is one sentence: battery materials did not move
+        together — lithium cycled, nickel and cobalt slid, lead stayed put — and any battery cost forecast that
+        treats "materials" as one variable is already wrong before it starts.</p>
+        <p><strong>Why:</strong> The divergence reflects the industry's structure: a squeeze-prone new input
+        (lithium), a chemistry transition cutting demand for two others (nickel, cobalt), and a mature recycling
+        loop damping the fourth (lead). Reading the index as one number hides that; reading it as four numbers
+        is how the industry actually works.</p>
+        <p class="muted"><em>My editorial view, not investment or purchasing advice.</em></p>
+      </div>
+
+      <h2>What buyers should ask</h2>
+      <ul>
+        <li>Which material index does the supplier's price formula track, and from which base?</li>
+        <li>What pass-through lag does the contract apply when the index moves?</li>
+        <li>Does the chemistry exposure (LFP vs NMC) change which index matters?</li>
+      </ul>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Market reporting — battery-grade lithium carbonate spot prices, September 2026 (domestic China ~128,000–156,000 yuan/t).</li>
+        <li>LME — nickel (~$16,250/t), lead (~$1,882.60/t) and cobalt (~$51,588/t) spot indications, September 2026.</li>
+        <li>Historical market data — January 2022 baselines for all four materials.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://market.worldbatteryhub.com">Battery Market Intelligence</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Market data carries explicit sourcing and is not investment or purchasing advice.</p>
+    </div>
+  </body>
+</html>
