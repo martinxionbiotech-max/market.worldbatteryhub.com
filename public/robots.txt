@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://market.worldbatteryhub.com/sitemap-index.xml
