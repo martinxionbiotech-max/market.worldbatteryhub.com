@@ -1,0 +1,39 @@
+# World Battery Hub — Market
+
+> Battery market intelligence — regional market profiles, price trends and forecasts, trade/HS-code references, and industry production/export analysis. Sub-site of the World Battery Hub family.
+
+## Core Pages
+
+- [Home](https://market.worldbatteryhub.com/): Entry point to the battery market intelligence site.
+- [Battery Market Overview](https://market.worldbatteryhub.com/battery-market-overview/): Global battery market overview.
+- [Battery Price Trends](https://market.worldbatteryhub.com/battery-price-trends/): Battery price trend analysis.
+- [Battery Price Forecast](https://market.worldbatteryhub.com/battery-price-forecast/): Battery price forecasting.
+- [Battery Materials Price Index](https://market.worldbatteryhub.com/battery-materials-price-index/): Raw-materials price index.
+- [Battery Demand Forecast](https://market.worldbatteryhub.com/battery-demand-forecast/): Battery demand forecasting.
+- [Regional Demand](https://market.worldbatteryhub.com/regional-demand/): Demand by region.
+- [China Battery Market](https://market.worldbatteryhub.com/china-battery-market/): China market profile.
+- [China Battery Prices](https://market.worldbatteryhub.com/china-battery-prices/): China battery pricing.
+- [China Battery Exports](https://market.worldbatteryhub.com/china-battery-exports/): China battery export data.
+- [China Battery Production](https://market.worldbatteryhub.com/china-battery-production/): China production analysis.
+- [China Lead-Acid Industry](https://market.worldbatteryhub.com/china-lead-acid-industry/): China lead-acid industry profile.
+- [China Lithium Industry](https://market.worldbatteryhub.com/china-lithium-industry/): China lithium industry profile.
+- [China Battery Clusters](https://market.worldbatteryhub.com/china-battery-clusters/): China battery manufacturing clusters.
+- [Lead-Acid Production & Export](https://market.worldbatteryhub.com/lead-acid-production-export/): Global lead-acid production and export.
+- [Lead-Acid Battery Market](https://market.worldbatteryhub.com/lead-acid-battery-market/): Lead-acid market segment.
+- [Lithium Battery Market](https://market.worldbatteryhub.com/lithium-battery-market/): Lithium market segment.
+- [Lithium Price & Supply](https://market.worldbatteryhub.com/lithium-price-supply/): Lithium pricing and supply chain.
+- [Sodium-Ion Market Outlook](https://market.worldbatteryhub.com/sodium-ion-market-outlook/): Sodium-ion market outlook.
+- [Storage Battery Market](https://market.worldbatteryhub.com/storage-battery-market/): Energy-storage battery market.
+- [Battery Recycling Market](https://market.worldbatteryhub.com/battery-recycling-market/): Battery recycling market.
+- [Battery Regulation](https://market.worldbatteryhub.com/battery-regulation/): Battery regulatory landscape.
+- [Battery Trade HS Codes](https://market.worldbatteryhub.com/battery-trade-hs-codes/): HS code reference for battery trade.
+- [Regional Markets](https://market.worldbatteryhub.com/): Regional market profiles (Europe, Germany, France, UK, USA, Latin America, Africa, Middle East, India, Japan, South Korea, Southeast Asia).
+- [Methodology](https://market.worldbatteryhub.com/methodology/): Market data methodology and caveats.
+
+## Main site
+
+- [World Battery Hub](https://worldbatteryhub.com/): Main knowledge hub (guides, tools, glossary, methodology).
+
+## Notes
+
+- Market data, price figures, and forecasts are estimates/reference figures with estimation uncertainty; see the Methodology page for sources and caveats. Not investment advice.
