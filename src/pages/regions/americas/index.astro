@@ -1,0 +1,23 @@
+---
+const SITE='https://market.worldbatteryhub.com';
+const items=[
+ ['USA battery market','/usa-battery-market/','Demand, tariffs and domestic capacity'],
+ ['Latin America battery market','/latin-america-battery-market/','Import-led demand and two-wheeler growth'],
+ ['Battery trade HS codes','/battery-trade-hs-codes/','Classification for import and export'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Americas Battery Market — USA & Latin America</title>
+<meta name="description" content="Americas battery market cluster: US demand, tariffs and capacity; Latin American import-led demand and two-wheeler growth; HS classification."/>
+<link rel="canonical" href={`${SITE}/regions/americas/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/americas/","name":"Americas Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Market</a> › Regions › Americas</p>
+<h1>Americas battery market</h1>
+<p>North America is a premium, regulation-heavy market; Latin America is import-led with strong two-wheeler and replacement demand.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/regions/europe/">Europe</a> · <a href="/prices/">Prices</a></p>
+</div></body></html>

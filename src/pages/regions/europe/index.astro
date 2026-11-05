@@ -1,0 +1,25 @@
+---
+const SITE='https://market.worldbatteryhub.com';
+const items=[
+ ['Europe battery market','/europe-battery-market/','Regional demand, regulation and localisation'],
+ ['Germany battery market','/germany-battery-market/','Automotive demand and cell capacity'],
+ ['France battery market','/france-battery-market/','Industrial policy and gigafactories'],
+ ['UK battery market','/uk-battery-market/','Demand, imports and the EV transition'],
+ ['Battery regulation','/battery-regulation/','EU rules, EPR and transport obligations'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Europe Battery Market — Germany, France, UK & EU Regulation</title>
+<meta name="description" content="Europe battery market cluster: regional demand, Germany, France, the UK and the EU battery regulation that shapes imports and end-of-life."/>
+<link rel="canonical" href={`${SITE}/regions/europe/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/europe/","name":"Europe Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Market</a> › Regions › Europe</p>
+<h1>Europe battery market</h1>
+<p>Europe combines high demand with the most developed battery regulation. The country pages cover demand and localisation; the regulation page covers what importers must document.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/regions/americas/">Americas</a> · <a href="/prices/">Prices</a></p>
+</div></body></html>

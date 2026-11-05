@@ -1,0 +1,25 @@
+---
+const SITE='https://market.worldbatteryhub.com';
+const items=[
+ ['Battery price trends','/battery-price-trends/','Historical direction by chemistry'],
+ ['Battery price forecast','/battery-price-forecast/','What the forward curve assumes'],
+ ['Materials price index','/battery-materials-price-index/','Lead, lithium, nickel and graphite'],
+ ['Lithium price & supply','/lithium-price-supply/','Upstream supply and its effect on cells'],
+ ['China battery prices','/china-battery-prices/','Factory-gate and export signals'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Battery Prices — Trends, Forecast and Material Index</title>
+<meta name="description" content="Battery price cluster: historical trends, forecasts, material price index for lead, lithium, nickel and graphite, and China factory-gate signals."/>
+<link rel="canonical" href={`${SITE}/prices/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/prices/","name":"Battery Prices","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Market</a> › Prices</p>
+<h1>Battery prices &amp; material costs</h1>
+<p>Price is a function of chemistry, capacity, certification and the material curve underneath. Use these pages to separate a real price change from a quote that has simply expired.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/battery-market-overview/">Market overview</a> · <a href="/battery-trade-hs-codes/">HS codes</a></p>
+</div></body></html>

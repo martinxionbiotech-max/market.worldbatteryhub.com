@@ -1,0 +1,23 @@
+---
+const SITE='https://market.worldbatteryhub.com';
+const items=[
+ ['Middle East battery market','/middle-east-battery-market/','Import demand, heat and storage applications'],
+ ['Africa battery market','/africa-battery-market/','Replacement demand, solar and two-wheelers'],
+ ['Battery demand forecast','/battery-demand-forecast/','Regional demand outlook'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Middle East & Africa Battery Market — Demand and Imports</title>
+<meta name="description" content="Middle East and Africa battery market cluster: import demand, heat and storage applications, solar and two-wheeler growth, and the regional demand forecast."/>
+<link rel="canonical" href={`${SITE}/regions/middle-east-africa/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/middle-east-africa/","name":"Middle East & Africa Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Market</a> › Regions › Middle East &amp; Africa</p>
+<h1>Middle East &amp; Africa battery market</h1>
+<p>Import-led demand with a strong replacement and solar-storage component. Heat and logistics shape both product choice and warranty claims.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/regions/europe/">Europe</a> · <a href="/regions/americas/">Americas</a></p>
+</div></body></html>

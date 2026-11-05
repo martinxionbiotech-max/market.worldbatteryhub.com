@@ -1,0 +1,31 @@
+---
+const SITE='https://market.worldbatteryhub.com';
+const items=[
+ ['China battery market','/china-battery-market/','Production, demand and the domestic replacement market'],
+ ['China battery prices','/china-battery-prices/','Factory-gate and export price signals'],
+ ['China battery exports','/china-battery-exports/','Volumes, destinations and trade flow'],
+ ['China battery production','/china-battery-production/','Output by chemistry and segment'],
+ ['China lead-acid industry','/china-lead-acid-industry/','The lead-acid base and its export role'],
+ ['China lithium industry','/china-lithium-industry/','Cell, material and pack capacity'],
+ ['China battery clusters','/china-battery-clusters/','Regional production clusters'],
+ ['India battery market','/india-battery-market/','Demand, localisation and imports'],
+ ['Japan battery market','/japan-battery-market/','Mature market and technology position'],
+ ['South Korea battery market','/south-korea-battery-market/','Cell makers and export orientation'],
+ ['Southeast Asia battery market','/southeast-asia-battery-market/','Assembly, two-wheelers and storage'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Asia Battery Market — China, India, Japan, Korea & SE Asia</title>
+<meta name="description" content="Asia battery market cluster: China production, prices, exports and clusters; India, Japan, South Korea and Southeast Asia demand and trade."/>
+<link rel="canonical" href={`${SITE}/regions/asia/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/asia/","name":"Asia Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Market</a> › Regions › Asia</p>
+<h1>Asia battery market</h1>
+<p>Asia is the centre of battery manufacturing and an increasingly important demand region. Start with China for supply and price signals, then the country pages for local demand and trade.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/regions/europe/">Europe</a> · <a href="/regions/americas/">Americas</a> · <a href="/prices/">Prices</a> · <a href="/battery-trade-hs-codes/">HS codes</a></p>
+</div></body></html>
