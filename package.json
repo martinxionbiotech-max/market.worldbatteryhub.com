@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && SITE_URL=https://market.worldbatteryhub.com SITE_NAME=\"World Battery Hub — Market\" SITE_DESC=\"Battery market and trade reference: supply, demand, pricing factors and regional trade flows.\" node ../scripts/postbuild.mjs && node ../scripts/generate-markdown.mjs",
+    "build": "astro build && SITE_URL=https://market.worldbatteryhub.com SITE_NAME=\"World Battery Hub — Market\" SITE_DESC=\"Battery market and trade reference: supply, demand, pricing factors and regional trade flows.\" OG_IMAGE=https://market.worldbatteryhub.com/images/og.webp node ../scripts/postbuild.mjs && node ../scripts/generate-markdown.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
