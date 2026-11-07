@@ -20,12 +20,32 @@ const items=[
 <link rel="canonical" href={`${SITE}/regions/asia/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/asia/","name":"Asia Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is China the cheapest source for every battery?", "acceptedAnswer": {"@type": "Answer", "text": "No. China is usually the lowest-cost source at scale, but freight, tariffs and certification can erase the advantage for small or regulated orders. Compare landed cost, not ex-works price."}}, {"@type": "Question", "name": "Why are India and Southeast Asia growing?", "acceptedAnswer": {"@type": "Answer", "text": "Localisation policy, two-wheeler electrification and storage demand are pulling assembly and cell capacity into those markets. The growth is real but uneven; check the country page for the segment that applies to your product."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Market</a> › Regions › Asia</p>
 <h1>Asia battery market</h1>
 <p>Asia is the centre of battery manufacturing and an increasingly important demand region. Start with China for supply and price signals, then the country pages for local demand and trade.</p>
+<h2>What drives the Asian market</h2>
+<p>Asia is not one market. China is the supply base: it sets the price of cells, materials and many finished packs, and its export flows determine availability elsewhere. India is a demand story with a localisation policy; Japan and South Korea are technology and premium-supply stories; Southeast Asia is an assembly and two-wheeler story. Reading the region as a single number hides the differences that matter to a buyer.</p>
+<h2>How to read the country pages</h2>
+<ul>
+<li><strong>Production pages</strong> describe capacity and output — what the country makes, not what it consumes.</li>
+<li><strong>Demand pages</strong> describe installation and replacement — what the country buys.</li>
+<li><strong>Trade pages</strong> describe exports, imports and HS classification — how the goods move.</li>
+<li><strong>Price pages</strong> describe factory-gate and export signals — what a quotation is likely to reflect.</li>
+</ul>
+<h2>Trade and policy</h2>
+<p>Export controls, tariffs and free-trade agreements change the landed cost more than a factory price move. Check the trade page for the route you are using, and confirm the HS code with your broker before comparing quotes from different origins.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>Segment lens</h2>
+<p>Lead-acid demand in the region is driven by vehicle replacement and telecom backup; lithium demand by EV, two-wheelers and storage. A country can be a large producer and a small consumer, or the reverse. Read the segment pages before assuming that a production figure translates into local availability.</p>
 <p class="muted">Related: <a href="/regions/europe/">Europe</a> · <a href="/regions/americas/">Americas</a> · <a href="/prices/">Prices</a> · <a href="/battery-trade-hs-codes/">HS codes</a></p>
+<h2>Frequently asked questions</h2>
+<h3>Is China the cheapest source for every battery?</h3>
+<p>No. China is usually the lowest-cost source at scale, but freight, tariffs and certification can erase the advantage for small or regulated orders. Compare landed cost, not ex-works price.</p>
+<h3>Why are India and Southeast Asia growing?</h3>
+<p>Localisation policy, two-wheeler electrification and storage demand are pulling assembly and cell capacity into those markets. The growth is real but uneven; check the country page for the segment that applies to your product.</p>
 </div></body></html>

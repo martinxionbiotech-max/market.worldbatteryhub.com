@@ -14,12 +14,34 @@ const items=[
 <link rel="canonical" href={`${SITE}/prices/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/prices/","name":"Battery Prices","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why did my battery quote change without notice?", "acceptedAnswer": {"@type": "Answer", "text": "Most likely the material price moved, the quote expired, or the specification changed. Ask for the date, the material basis and the Incoterm behind the number; a quote without those cannot be compared."}}, {"@type": "Question", "name": "Should I buy when lithium prices are low?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Cell price is only one input; demand, certification and freight also move. Buy against a specification and a validated sample, not against a price forecast alone."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Market</a> › Prices</p>
 <h1>Battery prices &amp; material costs</h1>
 <p>Price is a function of chemistry, capacity, certification and the material curve underneath. Use these pages to separate a real price change from a quote that has simply expired.</p>
+<h2>What moves battery prices</h2>
+<p>Four inputs explain most of a battery quotation: the material curve (lead, lithium, nickel, graphite), the chemistry and capacity, the certification and documentation package, and the freight route. A price change without a move in those inputs is usually a commercial decision or a quote that has expired, not a market signal.</p>
+<h2>How to read a quote</h2>
+<ul>
+<li><strong>Validity.</strong> A price without a validity date is an invitation to renegotiate, not a quote.</li>
+<li><strong>Incoterm.</strong> EXW, FOB, CIF and DDP include different costs; compare the same term.</li>
+<li><strong>Volume tier.</strong> The unit price at 10 units is not the price at 1,000.</li>
+<li><strong>Documentation.</strong> COA, MSDS, UN38.3 and certification add cost; a cheaper quote may exclude them.</li>
+</ul>
+<h2>Price versus cost</h2>
+<p>The lowest purchase price can be the highest cost over life if cycle life, efficiency or replacement intervals are worse. Use the total-cost-of-ownership approach for cycling applications, and the purchase price for low-cycle standby where the cycle-life advantage is never used.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>Building a price model</h2>
+<p>A useful price model has four lines: material cost, conversion cost, certification and freight. Material cost tracks the metal or compound; conversion cost tracks energy, labour and yield; certification is a fixed cost per model; freight scales with weight and route. When a quote moves, ask which line moved. If the supplier cannot say, the quote is not a model.</p>
+<h2>What to verify</h2>
+<p>Check the validity date, the Incoterm, the volume tier and the documentation included. A price that excludes the COA, MSDS or UN38.3 is not comparable with one that includes them; the missing documents will appear as a cost later.</p>
 <p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/battery-market-overview/">Market overview</a> · <a href="/battery-trade-hs-codes/">HS codes</a></p>
+<h2>Frequently asked questions</h2>
+<h3>Why did my battery quote change without notice?</h3>
+<p>Most likely the material price moved, the quote expired, or the specification changed. Ask for the date, the material basis and the Incoterm behind the number; a quote without those cannot be compared.</p>
+<h3>Should I buy when lithium prices are low?</h3>
+<p>Not necessarily. Cell price is only one input; demand, certification and freight also move. Buy against a specification and a validated sample, not against a price forecast alone.</p>
 </div></body></html>

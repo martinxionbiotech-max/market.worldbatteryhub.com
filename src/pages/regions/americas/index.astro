@@ -12,12 +12,35 @@ const items=[
 <link rel="canonical" href={`${SITE}/regions/americas/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/americas/","name":"Americas Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do US tariffs apply to all battery imports?", "acceptedAnswer": {"@type": "Answer", "text": "No. The rate depends on the product, the country of origin and the trade programme in force. Check the current tariff schedule and the origin rules for your specific HS code."}}, {"@type": "Question", "name": "Is Latin America a single market?", "acceptedAnswer": {"@type": "Answer", "text": "No. Brazil, Mexico, Chile and the Andean markets differ in tariffs, certification and demand mix. Treat the region as a set of country markets, not one."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Market</a> › Regions › Americas</p>
 <h1>Americas battery market</h1>
 <p>North America is a premium, regulation-heavy market; Latin America is import-led with strong two-wheeler and replacement demand.</p>
+<h2>What drives the Americas</h2>
+<p>The United States is a premium, policy-driven market: tariffs, local-content rules and incentives shape where cells and packs are made. Latin America is an import-led market with strong replacement demand, two-wheeler growth and solar-storage projects. The two halves respond to different signals and should not be averaged into one regional outlook.</p>
+<h2>How to read the data</h2>
+<p>Separate demand from capacity. A US announcement is not a US factory, and a Latin American import figure is not local production. Check the trade page for HS codes and the demand pages for the segment — automotive, storage or two-wheelers — that matches your product.</p>
+<h2>Trade policy</h2>
+<p>Tariffs and rules of origin can change the landed cost by more than a factory price move. Confirm the current rate and the origin rule with a broker before quoting a customer, and keep the classification consistent across invoices and shipping documents.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>Country comparison</h2>
+<ul>
+<li><strong>United States</strong> — premium demand, tariff exposure and local-content incentives; domestic cell capacity is growing but not yet sufficient for all segments.</li>
+<li><strong>Latin America</strong> — import-led replacement and two-wheeler demand, with solar-storage projects in Chile, Brazil and Mexico.</li>
+<li><strong>Canada</strong> — resource and automotive supply chain, closely linked to US rules of origin.</li>
+</ul>
+<h2>What to verify</h2>
+<p>Confirm the tariff classification, the country of origin and the applicable trade programme before quoting. A product that qualifies under one origin rule may not qualify under another; the difference can be larger than the factory price gap between suppliers.</p>
 <p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/regions/europe/">Europe</a> · <a href="/prices/">Prices</a></p>
+<h2>A note on lead times</h2>
+<p>US buyers usually face shorter ocean transit but more port and rail variability; Latin American buyers face longer transit and more customs variability. Ask for a landed lead time with the route and the Incoterm, not an ex-works production date. The difference between the two is often two to four weeks.</p>
+<h2>Frequently asked questions</h2>
+<h3>Do US tariffs apply to all battery imports?</h3>
+<p>No. The rate depends on the product, the country of origin and the trade programme in force. Check the current tariff schedule and the origin rules for your specific HS code.</p>
+<h3>Is Latin America a single market?</h3>
+<p>No. Brazil, Mexico, Chile and the Andean markets differ in tariffs, certification and demand mix. Treat the region as a set of country markets, not one.</p>
 </div></body></html>

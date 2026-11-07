@@ -14,12 +14,34 @@ const items=[
 <link rel="canonical" href={`${SITE}/regions/europe/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/regions/europe/","name":"Europe Battery Market","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which EU rules affect battery imports most?", "acceptedAnswer": {"@type": "Answer", "text": "The EU Battery Regulation (2023/1542) is the main framework: carbon footprint, recycled content, labelling, the battery passport and extended producer responsibility. The exact obligations depend on chemistry and application."}}, {"@type": "Question", "name": "Is a European gigafactory always cheaper for European buyers?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically. Local production avoids some logistics and tariff risk, but cell cost, utilisation and certification still decide the price. Compare landed cost and lead time, not the country of origin alone."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Market</a> › Regions › Europe</p>
 <h1>Europe battery market</h1>
 <p>Europe combines high demand with the most developed battery regulation. The country pages cover demand and localisation; the regulation page covers what importers must document.</p>
+<h2>What drives the European market</h2>
+<p>Europe combines high demand with the most developed battery regulation. The EU Battery Regulation adds carbon-footprint reporting, recycled-content thresholds, a battery passport and collection obligations. Those rules change the cost of importing and the value of a documented supply chain, which is why the region's market pages sit close to its regulation page.</p>
+<h2>How to read the country pages</h2>
+<p>Germany is the automotive and industrial demand centre; France is a policy-driven gigafactory story; the UK is an import-heavy transition market. Compare them on demand segment and local capacity, not on headline GDP. A country with a gigafactory under construction is not yet a country with available supply.</p>
+<h2>Regulation as a cost line</h2>
+<p>Carbon-footprint declarations, recycled content and due diligence are not paperwork at the margin; they are input costs. A supplier that cannot provide the data will either fail the requirement or price the risk into the quote. Ask for the declaration before comparing prices.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>Country comparison</h2>
+<ul>
+<li><strong>Germany</strong> — automotive and industrial demand; the largest established market, with local cell and pack capacity under construction.</li>
+<li><strong>France</strong> — policy-led gigafactory build-out; demand is strong but local supply is still scaling.</li>
+<li><strong>UK</strong> — import-heavy, with automotive demand and a developing local capacity story.</li>
+<li><strong>EU regulation</strong> — applies across the single market and changes the documentation and end-of-life cost for every country.</li>
+</ul>
+<h2>What to verify</h2>
+<p>Ask for the carbon-footprint declaration, the recycled-content statement and the battery-passport data model before comparing prices. A supplier that cannot provide them is not aligned with the direction of the regulation, even if the product is technically acceptable today.</p>
 <p class="muted">Related: <a href="/regions/asia/">Asia</a> · <a href="/regions/americas/">Americas</a> · <a href="/prices/">Prices</a></p>
+<h2>Frequently asked questions</h2>
+<h3>Which EU rules affect battery imports most?</h3>
+<p>The EU Battery Regulation (2023/1542) is the main framework: carbon footprint, recycled content, labelling, the battery passport and extended producer responsibility. The exact obligations depend on chemistry and application.</p>
+<h3>Is a European gigafactory always cheaper for European buyers?</h3>
+<p>Not automatically. Local production avoids some logistics and tariff risk, but cell cost, utilisation and certification still decide the price. Compare landed cost and lead time, not the country of origin alone.</p>
 </div></body></html>
